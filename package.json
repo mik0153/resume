@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "Simple Portfolio powered by Vue and Bootstrap",
     "keywords": [
         "css",
         "sass",
@@ -21,20 +21,10 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Mico Infante",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Mico Infante (http://github.com/mik0153)"
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-resume.git"
-    },
     "dependencies": {
         "bootstrap": "4.5.0"
     },
