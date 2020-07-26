@@ -61,9 +61,9 @@ html(lang='en')
                     .subheading.mb-5
                         | Manila, Philippines · +63 9171277454 · 
                         a(href='mailto:micoinfante1997@gmail.com') micoinfante1997@gmail.com
-                    p.lead.mb-5
+                    p.lead.mb-5  I am an iOS Developer passionate in cross platform development and mobile security. I am aiming to help a company build and deploy applications that will be used by millions of users and solve real world problems while continuously honing my skills not only professionally but also as a person.
                         //- | I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
-                        I am an iOS Developer passionate in cross platform development and mobile security. I am aiming to help a company build and deploy applications that will be used by millions of users and solve real world problems while continuously honing my skills not only professionally but also as a person.
+                       
                     .social-icons
                         a.social-icon(href='https://linkedin.com/kminfante')
                             i.fab.fa-linkedin-in
@@ -80,42 +80,128 @@ html(lang='en')
 
             section#portfolio.resume-section
                 .resume-section-content
-                    h2.mb-5 Portfolio
+                    h2.mb-5 My Portfolio
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 An App
-                            .subheading.mb-3 This app does this
-                            p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                            h3.mb-0 
+                                a(href='https://itadaki.monster/') ItadakiMonster
+                            .subheading.mb-3 Restaurant Review App
+                            p ItadakiMonster/いただきモンスター is the first iOS project that I developed and deployed. The idea of the app is to provide customers a service to review restaurants in Japan using videos. It took me 6 months to fully deploy the app on the AppStore. I am also the one responsible for the maintenance and feature updates.
+                            div(style='text-align:center; margin: 0 auto; width: 100%;')
+                                a(href='https://apps.apple.com/tt/app/itadakimonster/id1465576732')
+                                    img(src='assets/img/app-store-badge.png', style='max-width: 200px; height: 200px; margin-top: -60px;' alt='Download on the AppStore')        
                         .flex-shrink-1
-                            span
-                                img.mx-auto.mb-2(src='assets/img/SS_APP1-1030x634.png', alt='', style='max-width: 700px;')
-
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom.scale(src='assets/img/itadaki01.png', alt='', style='')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            img.mx-auto.mb-2(src='assets/img/SS_APP1-1030x634.png', alt='', style='max-width: 700px;')
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom.scale(src='assets/img/itadaki02.png', alt='')
                         .flex-shrink-1
-                            span
-                                 h3.mb-0 An App
-                            .subheading.mb-3 This app does this
-                            p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                                
+                            p Another main feature of the app is the map. All the uploaded restaurant video reviews can be viewed in the map. These videos are pinned directly to the restaurant location. I used Google Maps SDK for displaying and getting the coordinates of the restaurants and pin the reviews to it.
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            p The back-end of the app utilizes most of Firebase google technologies such as CloudFirestore, Firebase Storage, Firebase Deeplinks, Firebase functions, and Firebase Hosting. 
+                            
+                            |The project director asked me to make a simple CMS with a feature that will let the admin select a best video for the month, data changes will sync to the iOS app. I used node.js together with Vue for the interface for this.
+
+                        .flex-shrink-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom.scale(src='assets/img/itadaki03.png', alt='', style='')
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss(src='assets/img/itadaki04.png', alt='')
+                        .flex-shrink-1
+                            .h4.mb-3 Technologies That I Used:
+                            p Swift, CocoaPods, Google Maps SDK, Firebase, Node.js, Vue.js, Google SDK, Facebook SDK, HTML, CSS, Javascript
+                    br
+                    //- staff caller/ potchittona
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 
+                                a(href='#') Potchittona
+                            .subheading.mb-3 Staff Caller App
+                            p Potchittona/ポチッとな aims to provide a better customer experience. Instead of traditionally calling a waiter or staff, you can just scan a qr-code on a restaurant table to notify them. Using this app will let the user know the current promos offered by the restaurant. 
+                            | The iOS version is available on the appstore meanwhile, the android version is still in development but available for testing in limited functionalities.
+                            div(style='text-align:center; margin: 0 auto; width: 100%;')
+                                a(href='https://apps.apple.com/us/app/id1488890338')
+                                    img(src='assets/img/app-store-badge.png', style='max-width: 200px; height: 200px; margin-top: -60px;' alt='Download on the AppStore')        
+                                a(href='https://github.com/mik0153/StaffCaller/blob/master/app/release/app-release.apk')
+                                    img(src='assets/img/google-play-badge.png', style='max-width: 200px; height: 200px; margin-top: -60px;' alt='Download on the Github')        
+                        
+                        .flex-shrink-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom.scale(src='assets/img/potchi01.png', alt='', style='')
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom.scale(src='assets/img/potchi02.png', alt='')
+                        .flex-shrink-1
+                            p I am the sole developer for the Project. The use-case is divided into 3: An Admin, Store Owner or Staff, and Customer. Administrative functions are handled on Web using Node.js together with Vue.js. Store Owner or Staff functionalities are only available on iPad Devices. Customers can use the app on their iPhone and Android devices. 
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            .h4.mb-3 Technologies That I Used:
+                            p Swift, CocoaPods, Firebase, Node.js, Vue.js, Google SDK, Facebook SDK, Kotlin, KotlinX, HTML, CSS, Javascript, Heroku
+                        .flex-shrink-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom(src='assets/img/potchi03.png', alt='', style='')
+                                br
+                        br
+                        br
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5(style='z-index: 999;')
+                        .flex-grow-1
+                            h3.mb-0 
+                                a(href='#') Ramen Sekai
+                            .subheading.mb-3 Reward Points App
+                            p Ramen Sekai’s (ラーメン世界)  main feature is a reward system. Customers can earn points by dining to restaurants. These points can be used to redeem coupons that are equivalent to a food in a specific restaurant. 
+                                | The app is available in both AppStore and Google PlayStore.
+                            div(style='text-align:center; margin: 0 auto; width: 100%; z-index: 1000')
+                                a(href='https://apps.apple.com/us/app/id1503125317')
+                                    img(src='assets/img/app-store-badge.png', style='max-width: 200px; height: 200px; margin-top: -60px;' alt='Download on the AppStore')   
+                                a(href='https://play.google.com/store/apps/details?id=com.ortech.shopapp')
+                                    img(src='assets/img/google-play-badge.png', style='max-width: 200px; height: 200px; margin-top: -60px; z-index:999;' alt='Download on the GooglePlay')
+                                        
+                        .flex-shrink-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom.scale(src='assets/img/sekai01.png', alt='', style='overflow: hidden; z-index: 1;')
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom.scale(src='assets/img/sekai02.png', alt='')
+                        .flex-shrink-1
+                            p We are a team of two developers in this app. On the iOS App, I focused mainly on performance improvements and bug fixing. While I solely develop and deploy the android version on the Google PlayStore.  The app works cross platform. Accounts created on iOS can be used on the Android version, vice versa.  
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            p This project also includes a Web CMS made entirely from Javascript, HTML, and CSS. All data coming from the CMS are sync to all devices. 
+
+                        .flex-shrink-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss.zoom.scale(src='assets/img/sekai03.png', alt='', style='')
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            .span(style='text-align:center;')
+                                img.mx-auto.mb-2.app-ss(src='assets/img/sekai04.png', alt='')
+                        .flex-shrink-1
+                            .h4.mb-3 Technologies That I Used:
+                            p Swift, CocoaPods, Google Maps SDK, Firebase, Node.js, Vue.js, Google SDK, Facebook SDK, HTML, CSS, Javascript
+                    //- Ramen sekai
             hr.m-0
+
 
             // Experience
             section#experience.resume-section
                .resume-section-content
                     h2.mb-5 Experience
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-52
                         .flex-grow-1
                             h3.mb-0 iOS Developer
                             .subheading.mb-3
                                 a(href='https://fgsp.ph/') Feemo Global Solutions Philippines
                             p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                                | Worked mainly on developing ground up iOS Applications targeting the restaurant market in Japan. Uploaded few applications on the App Store and Google Play Store.
                         .flex-shrink-0
                             span.text-primary October 2018 - August 2020
 
@@ -125,9 +211,10 @@ html(lang='en')
                             .subheading.mb-3 
                                 a(href='https://www.alprograms.com/') NPVN Learning
                             p
-                                | Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+                                | As part of a requirement in College, I worked as a Web developer designated on the back-end. I was tasked to develop plugins for Wordpress. I was also part of search engine optimization (SEO).
                         .flex-shrink-0
-                            span.text-primary December 2011 - March 2013
+                            span.text-primary March 2016 - June 2016
+
 
             hr.m-0
 
@@ -144,119 +231,49 @@ html(lang='en')
                         .flex-shrink-0
                             span.text-primary June 2014 - March 2018
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between
-                        .flex-grow-1
-                            h3.mb-0 General De Jesus College
-                        .flex-shrink-0
-                            span.text-primary June 2010 - March 2014
-
             hr.m-0
 
             // Skills
             section#skills.resume-section
                 .resume-section-content
                     h2.mb-5 Skills
-                    .subheading.mb-3 Programming Languages & Tools
-                    ul.list-inline.dev-icons
-                        li.list-inline-item
-                            i.fab.fa-html5
-                        li.list-inline-item
-                            i.fab.fa-css3-alt
-                        li.list-inline-item
-                            i.fab.fa-js-square
-                        li.list-inline-item
-                            i.fab.fa-angular
-                        li.list-inline-item
-                            i.fab.fa-react
-                        li.list-inline-item
-                            i.fab.fa-node-js
-                        li.list-inline-item
-                            i.fab.fa-sass
-                        li.list-inline-item
-                            i.fab.fa-less
-                        li.list-inline-item
-                            i.fab.fa-wordpress
-                        li.list-inline-item
-                            i.fab.fa-gulp
-                        li.list-inline-item
-                            i.fab.fa-grunt
-                        li.list-inline-item
-                            i.fab.fa-npm
-                    .subheading.mb-3 Workflow
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Mobile-First, Responsive Design
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Browser Testing & Debugging
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Functional Teams
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Agile Development & Scrum
+                    .subheading.mb-3 Programming Languages & Frameworks
+                    p Swift, Javascript, Node.js, Kotlin, KotlinX, Vue.js, Express, HTML, CSS, SCSS
+                    .subheading.mb-3 Tools & IDE
+                    p Xcode, Android Studio, VS Code, Instruments
+                    .subheading.mb-3 Database
+                    p Firebase, Realm, MongoDB, SQLite
+                    //- .subheading.mb-3 Workflow
+                    //- ul.fa-ul.mb-0
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Mobile-First, Responsive Design
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Cross Browser Testing & Debugging
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Cross Functional Teams
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Agile Development & Scrum
 
             hr.m-0
 
-            // Interests
-            section#interests.resume-section
-                .resume-section-content
-                    h2.mb-5 Interests
-                    p
-                        | Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
-                    p.mb-0
-                        | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
+            //- // Interests
+            //- section#interests.resume-section
+            //-     .resume-section-content
+            //-         h2.mb-5 Interests
+            //-         p
+            //-             | Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
+            //-         p.mb-0
+            //-             | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
 
-            hr.m-0
-
-            // Awards
-            section#awards.resume-section
-                .resume-section-content
-                    h2.mb-5 Awards & Certifications
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Google Analytics Certified Developer
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Mobile Web Specialist - Google Certification
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 2
-                            sup nd 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - James Buchanan High School - Hackathon 2006
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 3
-                            sup rd 
-                            | Place - James Buchanan High School - Hackathon 2005
+   
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')

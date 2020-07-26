@@ -6,6 +6,7 @@ section.resume-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
     max-width: 75rem;
+
     .resume-section-content {
         width: 100%;
     }
@@ -13,6 +14,68 @@ section.resume-section {
     .bg-red {
         background-color: red;
     }
+
+    // for screenshot images
+    .zoom {
+        transition: transform .2s; /* Animation */
+        margin: 0 auto;
+      }
+      
+    .zoom:hover {
+        transform: scale(2.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    .app-ss {
+        max-width: 500px;
+        max-height: 500px;
+        padding: 1%;
+    }
+
+    .scale {
+        z-index: 1;
+        transform: scale(1.60);
+    }
+
+    .slider {
+
+        margin: 30px auto;
+        text-align: center;
+      }
+      .slider .slider-content {
+        margin-bottom: 30px;
+        // margin: 0 auto;
+        // position: relative;
+
+      }
+      .slider .slider-content img {
+        // position: absolute;
+        width: 400px;
+        height: auto;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .slider .slider-indicators ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .slider .slider-indicators ul li {
+        display: inline-block;
+        padding: 10px;
+      }
+      .slider .slider-indicators ul li a {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #e71840;
+        border-radius: 50%;
+        -webkit-transition: background 0.333s ease-in-out;
+        transition: background 0.333s ease-in-out;
+      }
+      
 }
 @include media-breakpoint-up(md) {
     section.resume-section {

@@ -1,7 +1,5 @@
 /*!
-    * Start Bootstrap - Resume v6.0.1 (undefined)
-    * Copyright 2013-2020 Mico Infante
-    * Licensed under undefined (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+
     */
     (function ($) {
     "use strict"; // Start of use strict
@@ -39,4 +37,40 @@
     $("body").scrollspy({
         target: "#sideNav",
     });
+
+    $(document).ready(function() {
+
+        var index = 0,
+            indicators = $('.slider-indicators a'),
+            hidden_images = $('.slider-content img'),
+            interval = 4000;
+
+        function slider() {
+            index++;
+            if (index == indicators.length) {
+            index = 0;
+            }
+        hidden_images.eq(index).css('opacity', '0');
+            indicators.each(function() {
+            $(this).css('background', '#e71840');
+            });
+            
+            hidden_images.each(function() {
+            $(this).css('visibility', 'hidden');
+            });
+
+            indicators.eq(index).css('background', '#212121');
+
+            setTimeout(function() {
+            hidden_images.eq(index).css('visibility', 'visible');
+            hidden_images.eq(index).css('opacity', '1');
+            }, 300);
+        }
+
+        indicators.eq(index).css('background', '#212121');
+        hidden_images.eq(index).css('visibility', 'visible');
+
+        setInterval(slider, interval);
+
+        });
 })(jQuery); // End of use strict

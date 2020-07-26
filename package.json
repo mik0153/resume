@@ -18,8 +18,9 @@
         "sass",
         "html",
         "responsive",
-        "theme",
-        "template"
+        "portfolio",
+        "iOS",
+        "Developer"
     ],
     "author": "Mico Infante",
     "contributors": [

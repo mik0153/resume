@@ -1,8 +1,5 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - Resume v6.0.1 (undefined)
-* Copyright 2013-2020 Mico Infante
-* Licensed under undefined (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -10121,6 +10118,56 @@ section.resume-section .resume-section-content {
 }
 section.resume-section .bg-red {
   background-color: red;
+}
+section.resume-section .zoom {
+  transition: transform 0.2s;
+  /* Animation */
+  margin: 0 auto;
+}
+section.resume-section .zoom:hover {
+  transform: scale(2.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+section.resume-section .app-ss {
+  max-width: 500px;
+  max-height: 500px;
+  padding: 1%;
+}
+section.resume-section .scale {
+  z-index: 1;
+  transform: scale(1.6);
+}
+section.resume-section .slider {
+  margin: 30px auto;
+  text-align: center;
+}
+section.resume-section .slider .slider-content {
+  margin-bottom: 30px;
+}
+section.resume-section .slider .slider-content img {
+  width: 400px;
+  height: auto;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+section.resume-section .slider .slider-indicators ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section.resume-section .slider .slider-indicators ul li {
+  display: inline-block;
+  padding: 10px;
+}
+section.resume-section .slider .slider-indicators ul li a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #e71840;
+  border-radius: 50%;
+  transition: background 0.333s ease-in-out;
 }
 
 @media (min-width: 768px) {
